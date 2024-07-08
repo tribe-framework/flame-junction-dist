@@ -1,15 +1,16 @@
-<?php include_once("php/_init.php");?><!DOCTYPE html>
+<?php require __DIR__ . '/../../../_init.php';?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <?php include_once("php/_head.php");?>
-    
+    <title>Junction</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2Bab2c03d6%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2Bce96e795%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22<?php echo urlencode($_ENV['JUNCTION_PASSWORD']); ?>%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22<?php echo urlencode($_ENV['TRIBE_API_URL_LOCAL']); ?>%22%7D%7D" />
 <meta name="theme-color" content="#0A1119">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -71,7 +72,7 @@
     <meta name="msapplication-config" content="/browserconfig.xml">
     <link rel="yandex-tableau-widget" href="/yandex-browser-manifest.json">
 
-  <?php include_once("php/_head_footer.php");?></head>
+  </head>
   <body class="bg-secondary" style="overflow-x: hidden;">
     <div class="vh-100 w-100 d-flex align-items-center justify-content-center" id="loading">
       <div class="spinner-border" role="status">
@@ -82,10 +83,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
-    <script src="/assets/vendor-e7744d86cfa0196a3349e0698e320e8a.js" integrity="sha256-LFdetWhdjs/BMq9/JzsNdhMZJEpz7M9Wa4wKlMm5vTw= sha512-3lBEmS7NL8mP1hMPGKGH3JlSNwEV7TXGqI2Ug+wz/0pMEWMEGdRchcJDEtmL6Hqa97jIYITzpm8Twkbl7D8rYA=="></script>
-<script src="/assets/chunk.9818.519fe12ec5704cbe1e3c.js" integrity="sha256-ObJQ1KECRFdMhyRXAD9RHGDvLPYM+Y5+9dyC6gCjrrc= sha512-aiidJtM1KWCvwl1GvTk5E6zANIOZ9HAWXugYBtEJcFQFdkdxVECQwxeI6x/13WXm7sCM1NQqUnYmXt0H3pwAlQ=="></script>
-<script src="/assets/chunk.3524.af23f6f8e969ba71e41d.js" integrity="sha256-nCDdZ27WR1LtPNImoCPkPPnyR3F2bosbrTzyic+ahaM= sha512-Q6uok1TK2u2sxsU75lb6wfdrSiQKoZWCh2Ks70VDysqKQmKPqjEvatTU/Ei3DDfoozu4fQ63H4tSa0r0uJL4mg=="></script>
-    <script src="/assets/junction-4cfe50898e4dfc32446cdec4b316ae04.js" integrity="sha256-kAtiO4XMrK6oKMvaTCFqJPXmDGin/KjHjvkuNHjY32c= sha512-iPc1+Mps6cxn/IfxBFgSY5jhC+EKrN72yR3b3xOJE7QIxmGMtlvvYQQiv/K6UAVIdzvn3kWHV8Cept75Lp8Ptw=="></script>
+    <script src="/assets/vendor-aef33731e3d75a0d9cb297384ca1828d.js" integrity="sha256-DHGofZOkZl6EjXMhEI1AH/IOX9UCWMocULaLlw6k1CE= sha512-u/+ozFs9H88qBADNV26FihLba9j/UhB2y0vnqk7pUvk+b1jq5KK1oVihaWMkK3BouxIVqKlZ6c3fkkvziEH6FQ==" ></script>
+<script src="/assets/chunk.4599.cbab82f5fb90d375cc5d.js" integrity="sha256-4nOCMMb5VE/2G6k2y56HDit3tlFNwM/KdNSljrAU+Hs= sha512-rl4jCXQ6kjukPEF4W6iZ4LCOrup3z/fjB0XPy5pF5h8qN+BfmDlZv34o48ZN7l+LtySbWLCCR6PcQxlUwfAPGg==" ></script>
+<script src="/assets/chunk.3524.7722aca482c18868d7f3.js" integrity="sha256-lRyyPkdXSJTy4Ok2b6kxmQXGp+7fJMtbDX8t+QRLDfc= sha512-it+igv5q5oWRa1ZGvq2RExOcRvssilYd9xzlq8/BPHtHXvwZJQULRPsmRl7FdwM3M4sW4uYfNaioErxXM0pvEA==" ></script>
+    <script src="/assets/junction.js.php" integrity="sha256-oo2pzTVHPL4FIIAXDy37rrXXhTYCO6ABq2rac/75C0c= sha512-ZsIghyeWQgYkQwfXZXHwJkYGcx4gDnrnId5WCzluk1aFMrV02nma+2S5dJ9KVIJ0D1StPKbfHbDnWc1O70T5iw==" ></script>
     <script>
     document.addEventListener('focusin', (e) => {
       if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
@@ -95,5 +96,5 @@
     </script>
 
     
-  <?php include_once("php/_body_footer.php");?></body>
+  </body>
 </html>
