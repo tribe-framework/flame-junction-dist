@@ -1,5 +1,5 @@
 <?php include_once("php/_init.php");?><!DOCTYPE html>
-<html>
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <?php include_once("php/_head.php");?>
@@ -9,15 +9,15 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2B214d4ba0%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
-<meta name="theme-color" content="#0A1119">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2Bf4270af5%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+<meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Junction">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <link integrity="" rel="stylesheet" href="/assets/vendor-6dbaff760ea716cec172e2899b33f4a8.css">
-    <link integrity="" rel="stylesheet" href="/assets/junction-650a86e3f9aafebea4835b13110f9f89.css">
+    <link integrity="" rel="stylesheet" href="/assets/junction-f389c6f8b630760b7a4c213aa430b490.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.1.2/tinymce.min.js"></script>
 
@@ -72,9 +72,9 @@
     <link rel="yandex-tableau-widget" href="/yandex-browser-manifest.json">
 
   <?php include_once("php/_head_footer.php");?></head>
-  <body class="bg-secondary" style="overflow-x: hidden;">
+  <body style="overflow-x: hidden;">
     <div class="vh-100 w-100 d-flex align-items-center justify-content-center" id="loading">
-      <div class="spinner-border" role="status">
+      <div class="spinner-border text-secondary" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
@@ -82,16 +82,33 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
-    <script src="/assets/vendor-5177ae3dde7ce0e2388140c408a38b01.js" integrity="sha256-LUmoeczwJ6ZzLUMK/dayDkaiG8hNXMr8p7F5WkNySuU= sha512-cHCGpAyNNzZ+0mbKorbMODWZ56R8KMl/hcv4m8zNMf1Zl6lfZthYan6Mry2ocxZOCMlO1RP3CBRYVXAbxYE9bg=="></script>
-<script src="/assets/chunk.9818.cab4099c79bce69a7d4a.js" integrity="sha256-2GUyMVvnz7+OSqdaPBLHyMSi7rBuEFs5VO1vhzOSafw= sha512-tS0oZYWSS3bx6NoC0U3EktAyxKSYqoxGQAi0SRjmH+zPmS/eE0khc04gpgkGzmvetW+dWknJyO4/njzaoikfkw=="></script>
-<script src="/assets/chunk.3524.2c624ee420b4adbc01a5.js" integrity="sha256-RzQhowIeYUqlAlu0S1lnrGRQA7cGMFhMPwxBXyyIuf0= sha512-4kWh0Naa8y5Ghnpg+5ciu/EmCoDo2DSjMWkrxxLEcPzg/VTjHYCiZeYSYfEIhu/xXRNfc1RR0Ak94cTVpYETIg=="></script>
-    <script src="/assets/junction-e7a93befa66014cc09e59964b6367817.js" integrity="sha256-DC62NPlFc5J78bPGfcgC45HYZIMgiRI+ihGaLPOj1tY= sha512-wdYPuAT+wJ4+5kFipAWhB6FPggDi3ngTdygAHqHKB2woL1rYXAdrlmPLhsT+vwrWFBCFo0X3Py01Q1ucOPNgRw=="></script>
+    <script src="/assets/vendor-e7744d86cfa0196a3349e0698e320e8a.js" integrity="sha256-LFdetWhdjs/BMq9/JzsNdhMZJEpz7M9Wa4wKlMm5vTw= sha512-3lBEmS7NL8mP1hMPGKGH3JlSNwEV7TXGqI2Ug+wz/0pMEWMEGdRchcJDEtmL6Hqa97jIYITzpm8Twkbl7D8rYA=="></script>
+<script src="/assets/chunk.9818.da862b311768528e8021.js" integrity="sha256-M0wfwbdxj2OniQHeU64I5CBAzW8uA8J/MSCa0sW29LM= sha512-ei1YxPXmTbhaWHuMK2UEAPzEafaGJgSgn3nuORhxjojbV2f93mTkhV042nk1LmZSn0Firm1L/M4/3aksDXi7lA=="></script>
+<script src="/assets/chunk.3524.2c6c7ff035f05889ba41.js" integrity="sha256-EkdLEK8KgzwErWbKtN+Ov2rJFqv/ONeVwCzcD3ukbo8= sha512-ibJQ//VJgZRw4YRl2Dzv9iOCoHN3/jFHTbQBtNHmkDQshiMareT4Mguh0wGH0NX3t7Vk5dNm7ypOR4Enw/dieA=="></script>
+    <script src="/assets/junction-6de3403909a7710b9893c86804b56204.js" integrity="sha256-pfG/y88OmHPHAD44x/dYZ2MwnsNE1Cl+LLZ0kNOF6pw= sha512-dIckDwwIB095wO1lZ1MC5yhjl1/GgzOjKISJHTHonUy+nAvpAw9tjcj6ADtQFu0AMm0h0LDR7zth6GqMKkRSJg=="></script>
     <script>
     document.addEventListener('focusin', (e) => {
       if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
         e.stopImmediatePropagation();
       }
     });
+    </script>
+
+    <script>
+      window.intercomSettings = {
+        api_base: "https://api-iam.intercom.io",
+        app_id: "z4829flu",
+        user_id: 'A4989E', // IMPORTANT: Replace "user.id" with the variable you use to capture the user's ID
+        name: 'Akshay M.', // IMPORTANT: Replace "user.name" with the variable you use to capture the user's name
+        email: 'cityowl@hey.com', // IMPORTANT: Replace "user.email" with the variable you use to capture the user's email address
+        created_at: '1715262361', // IMPORTANT: Replace "user.createdAt" with the variable you use to capture the user's sign-up date
+      };
+    </script>
+
+
+    <script>
+      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/z4829flu'
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/z4829flu';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
     </script>
 
     
