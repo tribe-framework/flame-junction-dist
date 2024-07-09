@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2Bf4270af5%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2B40df788c%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
 <meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -84,31 +84,14 @@
     <script src="https://unpkg.com/@root/passphrase"></script>
     <script src="/assets/vendor-e7744d86cfa0196a3349e0698e320e8a.js" integrity="sha256-LFdetWhdjs/BMq9/JzsNdhMZJEpz7M9Wa4wKlMm5vTw= sha512-3lBEmS7NL8mP1hMPGKGH3JlSNwEV7TXGqI2Ug+wz/0pMEWMEGdRchcJDEtmL6Hqa97jIYITzpm8Twkbl7D8rYA=="></script>
 <script src="/assets/chunk.9818.da862b311768528e8021.js" integrity="sha256-M0wfwbdxj2OniQHeU64I5CBAzW8uA8J/MSCa0sW29LM= sha512-ei1YxPXmTbhaWHuMK2UEAPzEafaGJgSgn3nuORhxjojbV2f93mTkhV042nk1LmZSn0Firm1L/M4/3aksDXi7lA=="></script>
-<script src="/assets/chunk.3524.2c6c7ff035f05889ba41.js" integrity="sha256-EkdLEK8KgzwErWbKtN+Ov2rJFqv/ONeVwCzcD3ukbo8= sha512-ibJQ//VJgZRw4YRl2Dzv9iOCoHN3/jFHTbQBtNHmkDQshiMareT4Mguh0wGH0NX3t7Vk5dNm7ypOR4Enw/dieA=="></script>
-    <script src="/assets/junction-6de3403909a7710b9893c86804b56204.js" integrity="sha256-pfG/y88OmHPHAD44x/dYZ2MwnsNE1Cl+LLZ0kNOF6pw= sha512-dIckDwwIB095wO1lZ1MC5yhjl1/GgzOjKISJHTHonUy+nAvpAw9tjcj6ADtQFu0AMm0h0LDR7zth6GqMKkRSJg=="></script>
+<script src="/assets/chunk.3524.b069cdf2d961139bc54d.js" integrity="sha256-JobnsuFp1Sg/1/UpW3A4pF3wOsPLPAc1TE3y39V9hKk= sha512-1IeTsIBxGJE1RTTKmQaeRZzhsqAVIyPdn4SNc7JHuME2ywnkMu/MMw1xz/Du1pMHD/kwIfFrlTcDOhfQaqj48w=="></script>
+    <script src="/assets/junction-0e77ede40cfc083a8a51fcb26a3dea41.js" integrity="sha256-3aEdHOY4dgGtJyeSPQFakaryk5PsZkW36+B8H9y+AzU= sha512-fQ52gW72nJLekuTtaQo3eiv8FeMxXALSm1qVjEtoovTmdFk45M+Kv1qQcHoIH9JPj3VNp80wlWWWRnjZTWsZyA=="></script>
     <script>
     document.addEventListener('focusin', (e) => {
       if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
         e.stopImmediatePropagation();
       }
     });
-    </script>
-
-    <script>
-      window.intercomSettings = {
-        api_base: "https://api-iam.intercom.io",
-        app_id: "z4829flu",
-        user_id: 'A4989E', // IMPORTANT: Replace "user.id" with the variable you use to capture the user's ID
-        name: 'Akshay M.', // IMPORTANT: Replace "user.name" with the variable you use to capture the user's name
-        email: 'cityowl@hey.com', // IMPORTANT: Replace "user.email" with the variable you use to capture the user's email address
-        created_at: '1715262361', // IMPORTANT: Replace "user.createdAt" with the variable you use to capture the user's sign-up date
-      };
-    </script>
-
-
-    <script>
-      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/z4829flu'
-      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/z4829flu';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
     </script>
 
     
