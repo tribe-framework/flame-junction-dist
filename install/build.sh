@@ -9,6 +9,8 @@ if test -f "$FILE"; then
     ember build -prod;
     php sync-dist.php;
     rm .gitignore;
+    cd ../../;
+    rm build.sh;
 else
     echo "This is not a Flame folder."
 fi
