@@ -168,3 +168,5 @@
  * @copyright CodeX 2018
  * @license The MIT License (MIT)
  */
+
+//! pretty-print-json v3.0.1 ~~ https://pretty-print-json.js.org ~~ MIT License
