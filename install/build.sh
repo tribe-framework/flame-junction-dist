@@ -7,6 +7,7 @@ if test -f "$FILE"; then
     yes | ember install ember-tribe;
     yes | ember install ember-junction;
     ember build -prod;
+    php sync-types.php;
     php sync-dist.php;
     rm .gitignore;
     cd ../../;
