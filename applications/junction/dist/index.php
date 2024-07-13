@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2Ba4ed583d%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%220.0.0%2B7d846d50%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
 <meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -83,9 +83,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
     <script src="/assets/vendor.js" integrity="sha256-vvUDyCF203oMlUiNgW/3wx+w/r5wdf1lHlA6s8IjxJI= sha512-6bgdAGOkNzsIHe17mtL+6s5qw3Zc7HvOuKDccFM5F/jeLmsPFiTCtJNQ8knd1/pG4ulzgZIB5kD44oehOF6lSw=="></script>
-<script src="/assets/chunk.5382.5b1a9a67489f973bd5f5.js" integrity="sha256-5Zu8mz+ckI7kH3OZFw/N1m71Jc8oO1JKS4kYJ2QzSYM= sha512-/KvZoSXGxCUPcDuCtChtBk3dE3y8uaXkoahEui89pW5lIuycp7M4mKY4w3qZNFiTZEfP0gS1SPxLm3KCW5K0FA=="></script>
-<script src="/assets/chunk.3524.f5b4e513938f63c1afc6.js" integrity="sha256-9VjUE1cnRwCDna1cFr+pUC8+uyoOljAze8WeSP9VnPc= sha512-VSxzhE3BBbCqRM63XrZ59mlgyArfIQeRZTq+9bCbaE8AoqsYUxHjQeLIQOv1ekmv4UgSbg3ckmmtIqUE+tGUfQ=="></script>
-    <script src="/assets/junction.js" integrity="sha256-UiuIbh3qr3UlTz5JgTPmzdggusruqlV2C11JRy4sQyw= sha512-25P9MEl/UHHXHZWq2N2z+1ZzZAv+aaRMesYDMtwiLE8xkfcH/mkeODczRw6CQwglWtn2wCt4/p9HsXLwrdKr8g=="></script>
+<script src="/assets/chunk.2391.7ef4a8fe164c3d3c00bb.js" integrity="sha256-X3rC/G2LtNHA2uRoOyZxjuqtmP15lj/ifEzoP5zfFEs= sha512-qtgjS+7C2swtJn4yJuWBnnnoVTO1n3oYHoCO56NyeTVF/+ypA1fRYCQDqn4dImGBnJ6qw9wf2A1SJQwSVmyxZA=="></script>
+<script src="/assets/chunk.3524.fc026f74c52d48601fdc.js" integrity="sha256-GYSl0nzCqZUy6nzdIiQPyeqTjO53d+qxIlIVeHYsDKM= sha512-giZVBEUzVhLNR3KvqgNmm1xpRWrUBQGc5fcnmZb7sCM5m8r8xAP0CXhk0cAU837UBgWtdzje6T3vKvObp9XjBQ=="></script>
+    <script src="/assets/junction.js" integrity="sha256-O3f20GfVMIL0BOjzSGFYuO/BFoZ2Sp/FPvPyBxk9DPI= sha512-mgEtgAv+B6xAbSqZ39WUiIq7coc7aP74AZQzB+M9HMkoiTm2XRnqo6BmBzaocs9VqS6lru3t+AqjCqG68MYUwA=="></script>
     <script>
     document.addEventListener('focusin', (e) => {
       if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
