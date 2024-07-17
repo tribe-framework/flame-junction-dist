@@ -2487,9 +2487,9 @@ return t}function ct(e){return e.map(r.valueForRef)}function dt(e){return{named:
 function mt(e){return"string"==typeof e?e:"function"!=typeof e.toString?"":String(e)}function gt(e,t){let r,i=(0,a.getInternalHelperManager)(e,!0)
 return null===i?r=null:(r="function"==typeof i?i:i.getHelper(e),(0,n.assert)(i,"BUG: expected manager or helper")),r}function bt(e){return(0,n.assert)(Array.isArray(e)||e===r.UNDEFINED_REFERENCE,"a reference other than UNDEFINED_REFERENCE is illegal here"),e===r.UNDEFINED_REFERENCE}ae.add(i.Op.Curry,((e,{op1:o,op2:s})=>{let a=e.stack,l=(0,t.check)(a.pop(),De),u=(0,t.check)(a.pop(),ze),c=e.getOwner()
 e.runtime.resolver
-e.loadValue(i.$v0,function(e,t,o,s,a,l){let u,c
-return(0,r.createComputeRef)((()=>{let a=(0,r.valueForRef)(t)
-return a===u||(c=me(a,e)?s?ye(e,a,o,s):s:e===i.CurriedTypes.Component&&"string"==typeof a&&a||(0,n.isObject)(a)?ye(e,a,o,s):null,u=a),c}))}(o,l,c,u))})),ae.add(i.Op.DynamicHelper,(e=>{let s,a=e.stack,l=(0,t.check)(a.pop(),De),u=(0,t.check)(a.pop(),Be).capture(),c=e.getOwner(),d=(0,r.createComputeRef)((()=>{void 0!==s&&(0,o.destroy)(s)
+e.loadValue(i.$v0,function(e,t,o,s){let a,l
+return(0,r.createComputeRef)((()=>{let u=(0,r.valueForRef)(t)
+return u===a||(l=me(u,e)?s?ye(e,u,o,s):s:e===i.CurriedTypes.Component&&"string"==typeof u&&u||(0,n.isObject)(u)?ye(e,u,o,s):null,a=u),l}))}(o,l,c,u))})),ae.add(i.Op.DynamicHelper,(e=>{let s,a=e.stack,l=(0,t.check)(a.pop(),De),u=(0,t.check)(a.pop(),Be).capture(),c=e.getOwner(),d=(0,r.createComputeRef)((()=>{void 0!==s&&(0,o.destroy)(s)
 let e=(0,r.valueForRef)(l)
 if(me(e,i.CurriedTypes.Helper)){let{definition:t,owner:r,positional:i,named:a}=be(e),c=gt(t,l)
 void 0!==a&&(u.named=(0,n.assign)({},...a,u.named)),void 0!==i&&(u.positional=i.concat(u.positional)),s=c(u,r),(0,o.associateDestroyableChild)(d,s)}else if((0,n.isObject)(e)){let t=gt(e,l)
@@ -2818,7 +2818,7 @@ if(void 0!==r&&d(r,n))L(r)
 else{A()
 try{e[F]=t()}finally{r=j(),e[B]=r,e[H]=c(r),L(r)}}return e[F]},e.isConst=function(e){U(e,"isConst")
 let t=e[B]
-return function(e,t){0}(),y(t)},e.isConstTag=y,e.isTracking=function(){return null!==P},e.resetTracking=function(){for(;R.length>0;)R.pop()
+return function(){0}(),y(t)},e.isConstTag=y,e.isTracking=function(){return null!==P},e.resetTracking=function(){for(;R.length>0;)R.pop()
 P=null,!1},e.tagFor=x,e.tagMetaFor=T,e.track=function(e,t){let r
 A(t)
 try{e()}finally{r=j()}return r},e.trackedData=function(e,t){let r=new WeakMap,n="function"==typeof t
