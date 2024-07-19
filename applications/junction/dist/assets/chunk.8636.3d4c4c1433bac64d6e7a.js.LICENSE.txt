@@ -169,4 +169,11 @@
  * @license The MIT License (MIT)
  */
 
+/**!
+ * Sortable 1.15.2
+ * @author	RubaXa   <trash@rubaxa.org>
+ * @author	owenm    <owen23355@gmail.com>
+ * @license MIT
+ */
+
 //! pretty-print-json v3.0.1 ~~ https://pretty-print-json.js.org ~~ MIT License
