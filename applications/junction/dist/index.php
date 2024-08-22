@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.1%2Ba58d5f28%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.2%2Bae11e6e6%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
 <meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -82,10 +82,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
-    <script src="/assets/vendor.js" integrity="sha256-YyxhJ/gaNTzbm/ntT+XyTxphK5U2U2gfXwe0DJpVdvs= sha512-Put4tA+IAFDufotLAHpILAJ1n/vGnAGvip4KwWmOYakKNgxHiZo10nWr1R5fdVolKTB/rN1j9vjvNpDjtBFp2Q=="></script>
-<script src="/assets/chunk.9046.af3986ef4861d24eacb6.js" integrity="sha256-v9hW0FjcUkfDoEvSBOtCWIHD9Qb7rBEUw4oOXpISzCs= sha512-Q1ym8b3jj9N56FfaC6B7p+W6Xqz9VX2O6vS64cKkqXcBBgRN1X/Z3tvWTSZUL3DQnkjHV1qOl720xnOoDoYh7w=="></script>
-<script src="/assets/chunk.3524.72a126d68c176bc50443.js" integrity="sha256-kjEs0UYWQsgWGrg51WW1y6zPYDyPebpTVmj8D4YMTzY= sha512-9+jAf8NVzo94Ac4Nppr6sPmbtlJ/8xEmKPp9/WQ5PIlIscq0n//TesICETv7Dqxa9ZIIi3BNsr68AwKmUruHAw=="></script>
-    <script src="/assets/junction.js" integrity="sha256-S6R2QMzDrjwH7a2fkNX33evRO9JK0nLLRRyArp2zoeM= sha512-OqMF1h38RCSCS9IEj5arg2ufBTDcZobyEqo3+b/9/Y/AyFwAkHBAXtS6nh2huDCys7i/AQ7OKF0BlxkmYLDBtg=="></script>
+    <script src="/assets/vendor.js" integrity="sha256-Rys4aoHp2nL2XHEXznBkH4cJ36Ltg61hahrDDb+Gc1g= sha512-+ItbCm/vayb19lPWrqLgd139bcAmo8vnBCYoJfz8IqBHp/Eo5n2gcbKZGmHqdd6f/L4HD3hzvbnjsAuOn1F/iA=="></script>
+<script src="/assets/chunk.9046.2fe945749ec131893be8.js" integrity="sha256-Ri/WMthvVsWaJk4hviLc/m7iHNKtjNQXsdqpRGgTBGU= sha512-m0UhcL79UgsqHtBuWhCyHGQWGWR6uYDce3MJhZzdnkJwc/nVuo5RhlA/2Aq7ysZdoL8edazwkhfjXyaiSSRYxQ=="></script>
+<script src="/assets/chunk.3524.b7a438a0fa506c13225a.js" integrity="sha256-oqJTs8M7rHWqgu1Yaqzd2nMLq8+zBBC3G0SRRTkQ148= sha512-VIPTaaV3uK6NqHSC7e3nmPGt9Hw11CU8/2ngvMdO+uZXrKlp8BYcCpRjw5DNVvN1cVrsqXdcZW3IfahmZzEnMQ=="></script>
+    <script src="/assets/junction.js" integrity="sha256-G8IInH86gBmn/ihMjhX+QAlgUG65/1t/7Q8UmHuxZ28= sha512-o8mEiHK1ybO8mp5xK/OOTCtp7qytDaNPIWHwcXHMdHyiMhebEtoUzLip/Zhb4UuPIjIvGb1q8uU4pfUHwW/3GA=="></script>
     <script>
     document.addEventListener('focusin', (e) => {
       if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
