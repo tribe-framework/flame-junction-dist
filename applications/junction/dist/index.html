@@ -1,24 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Junction</title>
-    <meta name="description" content="Frame your data.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Frame your data." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="/manifest.webmanifest">
-    <meta name="msapplication-config" content="/browserconfig.xml">
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.4%2B8d788269%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D" />
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.5%2Ba8a59d3a%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D" />
 <meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Junction">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link integrity="" rel="stylesheet" href="/assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="/assets/junction.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
+    <link integrity="" rel="stylesheet" href="/assets/vendor.css" />
+    <link
+      integrity=""
+      rel="stylesheet"
+      href="/assets/junction.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.1.2/tinymce.min.js"></script>
 
       <link rel="shortcut icon" href="/favicon.ico">
@@ -72,8 +79,11 @@
     <link rel="yandex-tableau-widget" href="/yandex-browser-manifest.json">
 
   </head>
-  <body style="overflow-x: hidden;">
-    <div class="vh-100 w-100 d-flex align-items-center justify-content-center" id="loadingHTML">
+  <body style="overflow-x: hidden">
+    <div
+      class="vh-100 w-100 d-flex align-items-center justify-content-center"
+      id="loadingHTML"
+    >
       <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -83,15 +93,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
     <script src="/assets/vendor.js" integrity="sha256-Rys4aoHp2nL2XHEXznBkH4cJ36Ltg61hahrDDb+Gc1g= sha512-+ItbCm/vayb19lPWrqLgd139bcAmo8vnBCYoJfz8IqBHp/Eo5n2gcbKZGmHqdd6f/L4HD3hzvbnjsAuOn1F/iA==" ></script>
-<script src="/assets/chunk.9046.34a0ae15c8e47bb7edfe.js" integrity="sha256-QgVMMN872xT1sbvQlSbcJEXphyOThD4/veYcKylTfNk= sha512-Svd7x0nmghd/0w3RpQAzpYet1AaGaZR3l6pbI9TvmPStBPVn4wsr5IcYZeSW0FmM5nWye+4BfpR17JsP+UARDQ==" ></script>
-<script src="/assets/chunk.3524.be4b030efe3909bc90e2.js" integrity="sha256-TjWi+FIm2wij/UqYHPsk15Sto3Q8exyi+o/+eJfJ+Tw= sha512-v55iP+6ICeDaWKpcBzzK8/4nAz2bXzxLSvPHff5+UnTC8wR1jpeHuStKXK891lOAaiEEkzunJV7fKZzEjBTVoQ==" ></script>
-    <script src="/assets/junction.js" integrity="sha256-oV+hS3Ye+UyH5eEcd6ghi8e7mWT7pKwvaRJLzUBbz0w= sha512-F7rvG8HG5cTBR0ZjEZzOVspH/tJUh0GoFvGRc75/xn6FvVXVVN644dHNZSEQhl30Br+zMLO8RsEwJ9rYKYTWSw==" ></script>
+<script src="/assets/chunk.9046.dd8557e1c78e5cfab448.js" integrity="sha256-iTODJ/+a4VyKZcTD50me+1H8gM+MLVHHdeLpoj5k7Ic= sha512-8afKtGf8WGWHmMVnJNIPTP/veBH73Yoezg54EHXDEGL26M8as9/sufbaJZLEvSlIEmJKmZCXeBTsZgwtQSVjAw==" ></script>
+<script src="/assets/chunk.3524.a36a9336f57f93e25d82.js" integrity="sha256-pw8pvgCF27Cw72tnpYigZ+qIiOVNZH+GchCXDGZv/aU= sha512-kFM2xj1DCn2HNz4dIedwHurwaAiRCp+EVZJ65wjuwCcMmjV5/DZknt35XbkHZwpEApUK9YQpG8OI80JpVrgMpQ==" ></script>
+    <script src="/assets/junction.js" integrity="sha256-RmqXrYJhqiviqgxzmhhIyeML5mtJ9+UV+X231rHop7o= sha512-UI0/Qg/4yib6jLPR+SlL7RP/JrKelftkUfGHFJf8IRHUTp+eNUtQ4tQKhJR5XNE2pYnF6vT+h81q+YIIxjt7ig==" ></script>
     <script>
-    document.addEventListener('focusin', (e) => {
-      if (e.target.closest(".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root") !== null) {
-        e.stopImmediatePropagation();
-      }
-    });
+      document.addEventListener("focusin", (e) => {
+        if (
+          e.target.closest(
+            ".tox-tinymce-aux, .moxman-window, .tam-assetmanager-root",
+          ) !== null
+        ) {
+          e.stopImmediatePropagation();
+        }
+      });
     </script>
 
     
