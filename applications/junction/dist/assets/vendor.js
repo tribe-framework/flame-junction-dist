@@ -3570,148 +3570,147 @@ return r.detach=function(e,r){t(e,(function(e){e.resizedAttached&&"function"==ty
  * Copyright (c) 2016 Jorik Tangelder;
  * Licensed under the MIT license */
 function(e,t,r,n){"use strict"
-var i,o=["","webkit","Moz","MS","ms","o"],s=t.createElement("div"),a="function",l=Math.round,u=Math.abs,c=Date.now
-function d(e,t,r){return setTimeout(y(e,r),t)}function p(e,t,r){return!!Array.isArray(e)&&(h(e,r[t],r),!0)}function h(e,t,r){var i
+var i,o=["","webkit","Moz","MS","ms","o"],s=t.createElement("div"),a=Math.round,l=Math.abs,u=Date.now
+function c(e,t,r){return setTimeout(b(e,r),t)}function d(e,t,r){return!!Array.isArray(e)&&(p(e,r[t],r),!0)}function p(e,t,r){var i
 if(e)if(e.forEach)e.forEach(t,r)
 else if(e.length!==n)for(i=0;i<e.length;)t.call(r,e[i],i,e),i++
-else for(i in e)e.hasOwnProperty(i)&&t.call(r,e[i],i,e)}function f(t,r,n){var i="DEPRECATED METHOD: "+r+"\n"+n+" AT \n"
+else for(i in e)e.hasOwnProperty(i)&&t.call(r,e[i],i,e)}function h(t,r,n){var i="DEPRECATED METHOD: "+r+"\n"+n+" AT \n"
 return function(){var r=new Error("get-stack-trace"),n=r&&r.stack?r.stack.replace(/^[^\(]+?[\n$]/gm,"").replace(/^\s+at\s+/gm,"").replace(/^Object.<anonymous>\s*\(/gm,"{anonymous}()@"):"Unknown Stack Trace",o=e.console&&(e.console.warn||e.console.log)
 return o&&o.call(e.console,i,n),t.apply(this,arguments)}}i="function"!=typeof Object.assign?function(e){if(e===n||null===e)throw new TypeError("Cannot convert undefined or null to object")
 for(var t=Object(e),r=1;r<arguments.length;r++){var i=arguments[r]
 if(i!==n&&null!==i)for(var o in i)i.hasOwnProperty(o)&&(t[o]=i[o])}return t}:Object.assign
-var m=f((function(e,t,r){for(var i=Object.keys(t),o=0;o<i.length;)(!r||r&&e[i[o]]===n)&&(e[i[o]]=t[i[o]]),o++
-return e}),"extend","Use `assign`."),g=f((function(e,t){return m(e,t,!0)}),"merge","Use `assign`.")
-function b(e,t,r){var n,o=t.prototype;(n=e.prototype=Object.create(o)).constructor=e,n._super=o,r&&i(n,r)}function y(e,t){return function(){return e.apply(t,arguments)}}function v(e,t){return typeof e==a?e.apply(t&&t[0]||n,t):e}function _(e,t){return e===n?t:e}function w(e,t,r){h(S(t),(function(t){e.addEventListener(t,r,!1)}))}function O(e,t,r){h(S(t),(function(t){e.removeEventListener(t,r,!1)}))}function C(e,t){for(;e;){if(e==t)return!0
-e=e.parentNode}return!1}function E(e,t){return e.indexOf(t)>-1}function S(e){return e.trim().split(/\s+/g)}function k(e,t,r){if(e.indexOf&&!r)return e.indexOf(t)
+var f=h((function(e,t,r){for(var i=Object.keys(t),o=0;o<i.length;)(!r||r&&e[i[o]]===n)&&(e[i[o]]=t[i[o]]),o++
+return e}),"extend","Use `assign`."),m=h((function(e,t){return f(e,t,!0)}),"merge","Use `assign`.")
+function g(e,t,r){var n,o=t.prototype;(n=e.prototype=Object.create(o)).constructor=e,n._super=o,r&&i(n,r)}function b(e,t){return function(){return e.apply(t,arguments)}}function y(e,t){return"function"==typeof e?e.apply(t&&t[0]||n,t):e}function v(e,t){return e===n?t:e}function _(e,t,r){p(E(t),(function(t){e.addEventListener(t,r,!1)}))}function w(e,t,r){p(E(t),(function(t){e.removeEventListener(t,r,!1)}))}function O(e,t){for(;e;){if(e==t)return!0
+e=e.parentNode}return!1}function C(e,t){return e.indexOf(t)>-1}function E(e){return e.trim().split(/\s+/g)}function S(e,t,r){if(e.indexOf&&!r)return e.indexOf(t)
 for(var n=0;n<e.length;){if(r&&e[n][r]==t||!r&&e[n]===t)return n
-n++}return-1}function T(e){return Array.prototype.slice.call(e,0)}function x(e,t,r){for(var n=[],i=[],o=0;o<e.length;){var s=t?e[o][t]:e[o]
-k(i,s)<0&&n.push(e[o]),i[o]=s,o++}return r&&(n=t?n.sort((function(e,r){return e[t]>r[t]})):n.sort()),n}function M(e,t){for(var r,i,s=t[0].toUpperCase()+t.slice(1),a=0;a<o.length;){if((i=(r=o[a])?r+s:t)in e)return i
-a++}return n}var P=1
-function R(t){var r=t.ownerDocument||t
-return r.defaultView||r.parentWindow||e}var A="ontouchstart"in e,j=M(e,"PointerEvent")!==n,I=A&&/mobile|tablet|ip(ad|hone|od)|android/i.test(navigator.userAgent),N="touch",L="mouse",D=25,F=1,B=4,H=8,U=1,z=2,V=4,$=8,q=16,W=z|V,G=$|q,Y=W|G,K=["x","y"],Q=["clientX","clientY"]
-function X(e,t){var r=this
-this.manager=e,this.callback=t,this.element=e.element,this.target=e.options.inputTarget,this.domHandler=function(t){v(e.options.enable,[e])&&r.handler(t)},this.init()}function J(e,t,r){var i=r.pointers.length,o=r.changedPointers.length,s=t&F&&i-o==0,a=t&(B|H)&&i-o==0
+n++}return-1}function k(e){return Array.prototype.slice.call(e,0)}function T(e,t,r){for(var n=[],i=[],o=0;o<e.length;){var s=t?e[o][t]:e[o]
+S(i,s)<0&&n.push(e[o]),i[o]=s,o++}return r&&(n=t?n.sort((function(e,r){return e[t]>r[t]})):n.sort()),n}function x(e,t){for(var r,i,s=t[0].toUpperCase()+t.slice(1),a=0;a<o.length;){if((i=(r=o[a])?r+s:t)in e)return i
+a++}return n}var M=1
+function P(t){var r=t.ownerDocument||t
+return r.defaultView||r.parentWindow||e}var R="ontouchstart"in e,A=x(e,"PointerEvent")!==n,j=R&&/mobile|tablet|ip(ad|hone|od)|android/i.test(navigator.userAgent),I="touch",N="mouse",L=24,D=["x","y"],F=["clientX","clientY"]
+function B(e,t){var r=this
+this.manager=e,this.callback=t,this.element=e.element,this.target=e.options.inputTarget,this.domHandler=function(t){y(e.options.enable,[e])&&r.handler(t)},this.init()}function H(e,t,r){var i=r.pointers.length,o=r.changedPointers.length,s=1&t&&i-o==0,a=12&t&&i-o==0
 r.isFirst=!!s,r.isFinal=!!a,s&&(e.session={}),r.eventType=t,function(e,t){var r=e.session,i=t.pointers,o=i.length
-r.firstInput||(r.firstInput=Z(t))
-o>1&&!r.firstMultiple?r.firstMultiple=Z(t):1===o&&(r.firstMultiple=!1)
-var s=r.firstInput,a=r.firstMultiple,l=a?a.center:s.center,d=t.center=ee(i)
-t.timeStamp=c(),t.deltaTime=t.timeStamp-s.timeStamp,t.angle=ie(l,d),t.distance=ne(l,d),function(e,t){var r=t.center,n=e.offsetDelta||{},i=e.prevDelta||{},o=e.prevInput||{}
-t.eventType!==F&&o.eventType!==B||(i=e.prevDelta={x:o.deltaX||0,y:o.deltaY||0},n=e.offsetDelta={x:r.x,y:r.y})
-t.deltaX=i.x+(r.x-n.x),t.deltaY=i.y+(r.y-n.y)}(r,t),t.offsetDirection=re(t.deltaX,t.deltaY)
-var p=te(t.deltaTime,t.deltaX,t.deltaY)
-t.overallVelocityX=p.x,t.overallVelocityY=p.y,t.overallVelocity=u(p.x)>u(p.y)?p.x:p.y,t.scale=a?(h=a.pointers,f=i,ne(f[0],f[1],Q)/ne(h[0],h[1],Q)):1,t.rotation=a?function(e,t){return ie(t[1],t[0],Q)+ie(e[1],e[0],Q)}(a.pointers,i):0,t.maxPointers=r.prevInput?t.pointers.length>r.prevInput.maxPointers?t.pointers.length:r.prevInput.maxPointers:t.pointers.length,function(e,t){var r,i,o,s,a=e.lastInterval||t,l=t.timeStamp-a.timeStamp
-if(t.eventType!=H&&(l>D||a.velocity===n)){var c=t.deltaX-a.deltaX,d=t.deltaY-a.deltaY,p=te(l,c,d)
-i=p.x,o=p.y,r=u(p.x)>u(p.y)?p.x:p.y,s=re(c,d),e.lastInterval=t}else r=a.velocity,i=a.velocityX,o=a.velocityY,s=a.direction
+r.firstInput||(r.firstInput=U(t))
+o>1&&!r.firstMultiple?r.firstMultiple=U(t):1===o&&(r.firstMultiple=!1)
+var s=r.firstInput,a=r.firstMultiple,c=a?a.center:s.center,d=t.center=z(i)
+t.timeStamp=u(),t.deltaTime=t.timeStamp-s.timeStamp,t.angle=W(c,d),t.distance=q(c,d),function(e,t){var r=t.center,n=e.offsetDelta||{},i=e.prevDelta||{},o=e.prevInput||{}
+1!==t.eventType&&4!==o.eventType||(i=e.prevDelta={x:o.deltaX||0,y:o.deltaY||0},n=e.offsetDelta={x:r.x,y:r.y})
+t.deltaX=i.x+(r.x-n.x),t.deltaY=i.y+(r.y-n.y)}(r,t),t.offsetDirection=$(t.deltaX,t.deltaY)
+var p=V(t.deltaTime,t.deltaX,t.deltaY)
+t.overallVelocityX=p.x,t.overallVelocityY=p.y,t.overallVelocity=l(p.x)>l(p.y)?p.x:p.y,t.scale=a?(h=a.pointers,f=i,q(f[0],f[1],F)/q(h[0],h[1],F)):1,t.rotation=a?function(e,t){return W(t[1],t[0],F)+W(e[1],e[0],F)}(a.pointers,i):0,t.maxPointers=r.prevInput?t.pointers.length>r.prevInput.maxPointers?t.pointers.length:r.prevInput.maxPointers:t.pointers.length,function(e,t){var r,i,o,s,a=e.lastInterval||t,u=t.timeStamp-a.timeStamp
+if(8!=t.eventType&&(u>25||a.velocity===n)){var c=t.deltaX-a.deltaX,d=t.deltaY-a.deltaY,p=V(u,c,d)
+i=p.x,o=p.y,r=l(p.x)>l(p.y)?p.x:p.y,s=$(c,d),e.lastInterval=t}else r=a.velocity,i=a.velocityX,o=a.velocityY,s=a.direction
 t.velocity=r,t.velocityX=i,t.velocityY=o,t.direction=s}(r,t)
 var h,f
 var m=e.element
-C(t.srcEvent.target,m)&&(m=t.srcEvent.target)
-t.target=m}(e,r),e.emit("hammer.input",r),e.recognize(r),e.session.prevInput=r}function Z(e){for(var t=[],r=0;r<e.pointers.length;)t[r]={clientX:l(e.pointers[r].clientX),clientY:l(e.pointers[r].clientY)},r++
-return{timeStamp:c(),pointers:t,center:ee(t),deltaX:e.deltaX,deltaY:e.deltaY}}function ee(e){var t=e.length
-if(1===t)return{x:l(e[0].clientX),y:l(e[0].clientY)}
+O(t.srcEvent.target,m)&&(m=t.srcEvent.target)
+t.target=m}(e,r),e.emit("hammer.input",r),e.recognize(r),e.session.prevInput=r}function U(e){for(var t=[],r=0;r<e.pointers.length;)t[r]={clientX:a(e.pointers[r].clientX),clientY:a(e.pointers[r].clientY)},r++
+return{timeStamp:u(),pointers:t,center:z(t),deltaX:e.deltaX,deltaY:e.deltaY}}function z(e){var t=e.length
+if(1===t)return{x:a(e[0].clientX),y:a(e[0].clientY)}
 for(var r=0,n=0,i=0;i<t;)r+=e[i].clientX,n+=e[i].clientY,i++
-return{x:l(r/t),y:l(n/t)}}function te(e,t,r){return{x:t/e||0,y:r/e||0}}function re(e,t){return e===t?U:u(e)>=u(t)?e<0?z:V:t<0?$:q}function ne(e,t,r){r||(r=K)
+return{x:a(r/t),y:a(n/t)}}function V(e,t,r){return{x:t/e||0,y:r/e||0}}function $(e,t){return e===t?1:l(e)>=l(t)?e<0?2:4:t<0?8:16}function q(e,t,r){r||(r=D)
 var n=t[r[0]]-e[r[0]],i=t[r[1]]-e[r[1]]
-return Math.sqrt(n*n+i*i)}function ie(e,t,r){r||(r=K)
+return Math.sqrt(n*n+i*i)}function W(e,t,r){r||(r=D)
 var n=t[r[0]]-e[r[0]],i=t[r[1]]-e[r[1]]
-return 180*Math.atan2(i,n)/Math.PI}X.prototype={handler:function(){},init:function(){this.evEl&&w(this.element,this.evEl,this.domHandler),this.evTarget&&w(this.target,this.evTarget,this.domHandler),this.evWin&&w(R(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&O(this.element,this.evEl,this.domHandler),this.evTarget&&O(this.target,this.evTarget,this.domHandler),this.evWin&&O(R(this.element),this.evWin,this.domHandler)}}
-var oe={mousedown:F,mousemove:2,mouseup:B},se="mousedown",ae="mousemove mouseup"
-function le(){this.evEl=se,this.evWin=ae,this.pressed=!1,X.apply(this,arguments)}b(le,X,{handler:function(e){var t=oe[e.type]
-t&F&&0===e.button&&(this.pressed=!0),2&t&&1!==e.which&&(t=B),this.pressed&&(t&B&&(this.pressed=!1),this.callback(this.manager,t,{pointers:[e],changedPointers:[e],pointerType:L,srcEvent:e}))}})
-var ue={pointerdown:F,pointermove:2,pointerup:B,pointercancel:H,pointerout:H},ce={2:N,3:"pen",4:L,5:"kinect"},de="pointerdown",pe="pointermove pointerup pointercancel"
-function he(){this.evEl=de,this.evWin=pe,X.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}e.MSPointerEvent&&!e.PointerEvent&&(de="MSPointerDown",pe="MSPointerMove MSPointerUp MSPointerCancel"),b(he,X,{handler:function(e){var t=this.store,r=!1,n=e.type.toLowerCase().replace("ms",""),i=ue[n],o=ce[e.pointerType]||e.pointerType,s=o==N,a=k(t,e.pointerId,"pointerId")
-i&F&&(0===e.button||s)?a<0&&(t.push(e),a=t.length-1):i&(B|H)&&(r=!0),a<0||(t[a]=e,this.callback(this.manager,i,{pointers:t,changedPointers:[e],pointerType:o,srcEvent:e}),r&&t.splice(a,1))}})
-var fe={touchstart:F,touchmove:2,touchend:B,touchcancel:H}
-function me(){this.evTarget="touchstart",this.evWin="touchstart touchmove touchend touchcancel",this.started=!1,X.apply(this,arguments)}function ge(e,t){var r=T(e.touches),n=T(e.changedTouches)
-return t&(B|H)&&(r=x(r.concat(n),"identifier",!0)),[r,n]}b(me,X,{handler:function(e){var t=fe[e.type]
-if(t===F&&(this.started=!0),this.started){var r=ge.call(this,e,t)
-t&(B|H)&&r[0].length-r[1].length==0&&(this.started=!1),this.callback(this.manager,t,{pointers:r[0],changedPointers:r[1],pointerType:N,srcEvent:e})}}})
-var be={touchstart:F,touchmove:2,touchend:B,touchcancel:H},ye="touchstart touchmove touchend touchcancel"
-function ve(){this.evTarget=ye,this.targetIds={},X.apply(this,arguments)}function _e(e,t){var r=T(e.touches),n=this.targetIds
-if(t&(2|F)&&1===r.length)return n[r[0].identifier]=!0,[r,r]
-var i,o,s=T(e.changedTouches),a=[],l=this.target
-if(o=r.filter((function(e){return C(e.target,l)})),t===F)for(i=0;i<o.length;)n[o[i].identifier]=!0,i++
-for(i=0;i<s.length;)n[s[i].identifier]&&a.push(s[i]),t&(B|H)&&delete n[s[i].identifier],i++
-return a.length?[x(o.concat(a),"identifier",!0),a]:void 0}b(ve,X,{handler:function(e){var t=be[e.type],r=_e.call(this,e,t)
-r&&this.callback(this.manager,t,{pointers:r[0],changedPointers:r[1],pointerType:N,srcEvent:e})}})
-var we=2500
-function Oe(){X.apply(this,arguments)
-var e=y(this.handler,this)
-this.touch=new ve(this.manager,e),this.mouse=new le(this.manager,e),this.primaryTouch=null,this.lastTouches=[]}function Ce(e,t){e&F?(this.primaryTouch=t.changedPointers[0].identifier,Ee.call(this,t)):e&(B|H)&&Ee.call(this,t)}function Ee(e){var t=e.changedPointers[0]
+return 180*Math.atan2(i,n)/Math.PI}B.prototype={handler:function(){},init:function(){this.evEl&&_(this.element,this.evEl,this.domHandler),this.evTarget&&_(this.target,this.evTarget,this.domHandler),this.evWin&&_(P(this.element),this.evWin,this.domHandler)},destroy:function(){this.evEl&&w(this.element,this.evEl,this.domHandler),this.evTarget&&w(this.target,this.evTarget,this.domHandler),this.evWin&&w(P(this.element),this.evWin,this.domHandler)}}
+var G={mousedown:1,mousemove:2,mouseup:4},Y="mousedown",K="mousemove mouseup"
+function Q(){this.evEl=Y,this.evWin=K,this.pressed=!1,B.apply(this,arguments)}g(Q,B,{handler:function(e){var t=G[e.type]
+1&t&&0===e.button&&(this.pressed=!0),2&t&&1!==e.which&&(t=4),this.pressed&&(4&t&&(this.pressed=!1),this.callback(this.manager,t,{pointers:[e],changedPointers:[e],pointerType:N,srcEvent:e}))}})
+var X={pointerdown:1,pointermove:2,pointerup:4,pointercancel:8,pointerout:8},J={2:I,3:"pen",4:N,5:"kinect"},Z="pointerdown",ee="pointermove pointerup pointercancel"
+function te(){this.evEl=Z,this.evWin=ee,B.apply(this,arguments),this.store=this.manager.session.pointerEvents=[]}e.MSPointerEvent&&!e.PointerEvent&&(Z="MSPointerDown",ee="MSPointerMove MSPointerUp MSPointerCancel"),g(te,B,{handler:function(e){var t=this.store,r=!1,n=e.type.toLowerCase().replace("ms",""),i=X[n],o=J[e.pointerType]||e.pointerType,s=o==I,a=S(t,e.pointerId,"pointerId")
+1&i&&(0===e.button||s)?a<0&&(t.push(e),a=t.length-1):12&i&&(r=!0),a<0||(t[a]=e,this.callback(this.manager,i,{pointers:t,changedPointers:[e],pointerType:o,srcEvent:e}),r&&t.splice(a,1))}})
+var re={touchstart:1,touchmove:2,touchend:4,touchcancel:8}
+function ne(){this.evTarget="touchstart",this.evWin="touchstart touchmove touchend touchcancel",this.started=!1,B.apply(this,arguments)}function ie(e,t){var r=k(e.touches),n=k(e.changedTouches)
+return 12&t&&(r=T(r.concat(n),"identifier",!0)),[r,n]}g(ne,B,{handler:function(e){var t=re[e.type]
+if(1===t&&(this.started=!0),this.started){var r=ie.call(this,e,t)
+12&t&&r[0].length-r[1].length==0&&(this.started=!1),this.callback(this.manager,t,{pointers:r[0],changedPointers:r[1],pointerType:I,srcEvent:e})}}})
+var oe={touchstart:1,touchmove:2,touchend:4,touchcancel:8},se="touchstart touchmove touchend touchcancel"
+function ae(){this.evTarget=se,this.targetIds={},B.apply(this,arguments)}function le(e,t){var r=k(e.touches),n=this.targetIds
+if(3&t&&1===r.length)return n[r[0].identifier]=!0,[r,r]
+var i,o,s=k(e.changedTouches),a=[],l=this.target
+if(o=r.filter((function(e){return O(e.target,l)})),1===t)for(i=0;i<o.length;)n[o[i].identifier]=!0,i++
+for(i=0;i<s.length;)n[s[i].identifier]&&a.push(s[i]),12&t&&delete n[s[i].identifier],i++
+return a.length?[T(o.concat(a),"identifier",!0),a]:void 0}g(ae,B,{handler:function(e){var t=oe[e.type],r=le.call(this,e,t)
+r&&this.callback(this.manager,t,{pointers:r[0],changedPointers:r[1],pointerType:I,srcEvent:e})}})
+function ue(){B.apply(this,arguments)
+var e=b(this.handler,this)
+this.touch=new ae(this.manager,e),this.mouse=new Q(this.manager,e),this.primaryTouch=null,this.lastTouches=[]}function ce(e,t){1&e?(this.primaryTouch=t.changedPointers[0].identifier,de.call(this,t)):12&e&&de.call(this,t)}function de(e){var t=e.changedPointers[0]
 if(t.identifier===this.primaryTouch){var r={x:t.clientX,y:t.clientY}
 this.lastTouches.push(r)
 var n=this.lastTouches
 setTimeout((function(){var e=n.indexOf(r)
-e>-1&&n.splice(e,1)}),we)}}function Se(e){for(var t=e.srcEvent.clientX,r=e.srcEvent.clientY,n=0;n<this.lastTouches.length;n++){var i=this.lastTouches[n],o=Math.abs(t-i.x),s=Math.abs(r-i.y)
-if(o<=25&&s<=25)return!0}return!1}b(Oe,X,{handler:function(e,t,r){var n=r.pointerType==N,i=r.pointerType==L
-if(!(i&&r.sourceCapabilities&&r.sourceCapabilities.firesTouchEvents)){if(n)Ce.call(this,t,r)
-else if(i&&Se.call(this,r))return
+e>-1&&n.splice(e,1)}),2500)}}function pe(e){for(var t=e.srcEvent.clientX,r=e.srcEvent.clientY,n=0;n<this.lastTouches.length;n++){var i=this.lastTouches[n],o=Math.abs(t-i.x),s=Math.abs(r-i.y)
+if(o<=25&&s<=25)return!0}return!1}g(ue,B,{handler:function(e,t,r){var n=r.pointerType==I,i=r.pointerType==N
+if(!(i&&r.sourceCapabilities&&r.sourceCapabilities.firesTouchEvents)){if(n)ce.call(this,t,r)
+else if(i&&pe.call(this,r))return
 this.callback(e,t,r)}},destroy:function(){this.touch.destroy(),this.mouse.destroy()}})
-var ke=M(s.style,"touchAction"),Te=ke!==n,xe="compute",Me="auto",Pe="manipulation",Re="none",Ae="pan-x",je="pan-y",Ie=function(){if(!Te)return!1
+var he=x(s.style,"touchAction"),fe=he!==n,me="compute",ge="auto",be="manipulation",ye="none",ve="pan-x",_e="pan-y",we=function(){if(!fe)return!1
 var t={},r=e.CSS&&e.CSS.supports
 return["auto","manipulation","pan-y","pan-x","pan-x pan-y","none"].forEach((function(n){t[n]=!r||e.CSS.supports("touch-action",n)})),t}()
-function Ne(e,t){this.manager=e,this.set(t)}Ne.prototype={set:function(e){e==xe&&(e=this.compute()),Te&&this.manager.element.style&&Ie[e]&&(this.manager.element.style[ke]=e),this.actions=e.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var e=[]
-return h(this.manager.recognizers,(function(t){v(t.options.enable,[t])&&(e=e.concat(t.getTouchAction()))})),function(e){if(E(e,Re))return Re
-var t=E(e,Ae),r=E(e,je)
-if(t&&r)return Re
-if(t||r)return t?Ae:je
-if(E(e,Pe))return Pe
-return Me}(e.join(" "))},preventDefaults:function(e){var t=e.srcEvent,r=e.offsetDirection
+function Oe(e,t){this.manager=e,this.set(t)}Oe.prototype={set:function(e){e==me&&(e=this.compute()),fe&&this.manager.element.style&&we[e]&&(this.manager.element.style[he]=e),this.actions=e.toLowerCase().trim()},update:function(){this.set(this.manager.options.touchAction)},compute:function(){var e=[]
+return p(this.manager.recognizers,(function(t){y(t.options.enable,[t])&&(e=e.concat(t.getTouchAction()))})),function(e){if(C(e,ye))return ye
+var t=C(e,ve),r=C(e,_e)
+if(t&&r)return ye
+if(t||r)return t?ve:_e
+if(C(e,be))return be
+return ge}(e.join(" "))},preventDefaults:function(e){var t=e.srcEvent,r=e.offsetDirection
 if(this.manager.session.prevented)t.preventDefault()
-else{var n=this.actions,i=E(n,Re)&&!Ie[Re],o=E(n,je)&&!Ie[je],s=E(n,Ae)&&!Ie[Ae]
+else{var n=this.actions,i=C(n,ye)&&!we[ye],o=C(n,_e)&&!we[_e],s=C(n,ve)&&!we[ve]
 if(i){var a=1===e.pointers.length,l=e.distance<2,u=e.deltaTime<250
-if(a&&l&&u)return}if(!s||!o)return i||o&&r&W||s&&r&G?this.preventSrc(t):void 0}},preventSrc:function(e){this.manager.session.prevented=!0,e.preventDefault()}}
-var Le=1,De=32
-function Fe(e){this.options=i({},this.defaults,e||{}),this.id=P++,this.manager=null,this.options.enable=_(this.options.enable,!0),this.state=Le,this.simultaneous={},this.requireFail=[]}function Be(e){return 16&e?"cancel":8&e?"end":4&e?"move":2&e?"start":""}function He(e){return e==q?"down":e==$?"up":e==z?"left":e==V?"right":""}function Ue(e,t){var r=t.manager
-return r?r.get(e):e}function ze(){Fe.apply(this,arguments)}function Ve(){ze.apply(this,arguments),this.pX=null,this.pY=null}function $e(){ze.apply(this,arguments)}function qe(){Fe.apply(this,arguments),this._timer=null,this._input=null}function We(){ze.apply(this,arguments)}function Ge(){ze.apply(this,arguments)}function Ye(){Fe.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function Ke(e,t){return(t=t||{}).recognizers=_(t.recognizers,Ke.defaults.preset),new Qe(e,t)}Fe.prototype={defaults:{},set:function(e){return i(this.options,e),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(e){if(p(e,"recognizeWith",this))return this
+if(a&&l&&u)return}if(!s||!o)return i||o&&6&r||s&&r&L?this.preventSrc(t):void 0}},preventSrc:function(e){this.manager.session.prevented=!0,e.preventDefault()}}
+var Ce=32
+function Ee(e){this.options=i({},this.defaults,e||{}),this.id=M++,this.manager=null,this.options.enable=v(this.options.enable,!0),this.state=1,this.simultaneous={},this.requireFail=[]}function Se(e){return 16&e?"cancel":8&e?"end":4&e?"move":2&e?"start":""}function ke(e){return 16==e?"down":8==e?"up":2==e?"left":4==e?"right":""}function Te(e,t){var r=t.manager
+return r?r.get(e):e}function xe(){Ee.apply(this,arguments)}function Me(){xe.apply(this,arguments),this.pX=null,this.pY=null}function Pe(){xe.apply(this,arguments)}function Re(){Ee.apply(this,arguments),this._timer=null,this._input=null}function Ae(){xe.apply(this,arguments)}function je(){xe.apply(this,arguments)}function Ie(){Ee.apply(this,arguments),this.pTime=!1,this.pCenter=!1,this._timer=null,this._input=null,this.count=0}function Ne(e,t){return(t=t||{}).recognizers=v(t.recognizers,Ne.defaults.preset),new Le(e,t)}Ee.prototype={defaults:{},set:function(e){return i(this.options,e),this.manager&&this.manager.touchAction.update(),this},recognizeWith:function(e){if(d(e,"recognizeWith",this))return this
 var t=this.simultaneous
-return t[(e=Ue(e,this)).id]||(t[e.id]=e,e.recognizeWith(this)),this},dropRecognizeWith:function(e){return p(e,"dropRecognizeWith",this)||(e=Ue(e,this),delete this.simultaneous[e.id]),this},requireFailure:function(e){if(p(e,"requireFailure",this))return this
+return t[(e=Te(e,this)).id]||(t[e.id]=e,e.recognizeWith(this)),this},dropRecognizeWith:function(e){return d(e,"dropRecognizeWith",this)||(e=Te(e,this),delete this.simultaneous[e.id]),this},requireFailure:function(e){if(d(e,"requireFailure",this))return this
 var t=this.requireFail
-return-1===k(t,e=Ue(e,this))&&(t.push(e),e.requireFailure(this)),this},dropRequireFailure:function(e){if(p(e,"dropRequireFailure",this))return this
-e=Ue(e,this)
-var t=k(this.requireFail,e)
+return-1===S(t,e=Te(e,this))&&(t.push(e),e.requireFailure(this)),this},dropRequireFailure:function(e){if(d(e,"dropRequireFailure",this))return this
+e=Te(e,this)
+var t=S(this.requireFail,e)
 return t>-1&&this.requireFail.splice(t,1),this},hasRequireFailures:function(){return this.requireFail.length>0},canRecognizeWith:function(e){return!!this.simultaneous[e.id]},emit:function(e){var t=this,r=this.state
-function n(r){t.manager.emit(r,e)}r<8&&n(t.options.event+Be(r)),n(t.options.event),e.additionalEvent&&n(e.additionalEvent),r>=8&&n(t.options.event+Be(r))},tryEmit:function(e){if(this.canEmit())return this.emit(e)
-this.state=De},canEmit:function(){for(var e=0;e<this.requireFail.length;){if(!(this.requireFail[e].state&(De|Le)))return!1
+function n(r){t.manager.emit(r,e)}r<8&&n(t.options.event+Se(r)),n(t.options.event),e.additionalEvent&&n(e.additionalEvent),r>=8&&n(t.options.event+Se(r))},tryEmit:function(e){if(this.canEmit())return this.emit(e)
+this.state=Ce},canEmit:function(){for(var e=0;e<this.requireFail.length;){if(!(33&this.requireFail[e].state))return!1
 e++}return!0},recognize:function(e){var t=i({},e)
-if(!v(this.options.enable,[this,t]))return this.reset(),void(this.state=De)
-56&this.state&&(this.state=Le),this.state=this.process(t),30&this.state&&this.tryEmit(t)},process:function(e){},getTouchAction:function(){},reset:function(){}},b(ze,Fe,{defaults:{pointers:1},attrTest:function(e){var t=this.options.pointers
+if(!y(this.options.enable,[this,t]))return this.reset(),void(this.state=Ce)
+56&this.state&&(this.state=1),this.state=this.process(t),30&this.state&&this.tryEmit(t)},process:function(e){},getTouchAction:function(){},reset:function(){}},g(xe,Ee,{defaults:{pointers:1},attrTest:function(e){var t=this.options.pointers
 return 0===t||e.pointers.length===t},process:function(e){var t=this.state,r=e.eventType,n=6&t,i=this.attrTest(e)
-return n&&(r&H||!i)?16|t:n||i?r&B?8|t:2&t?4|t:2:De}}),b(Ve,ze,{defaults:{event:"pan",threshold:10,pointers:1,direction:Y},getTouchAction:function(){var e=this.options.direction,t=[]
-return e&W&&t.push(je),e&G&&t.push(Ae),t},directionTest:function(e){var t=this.options,r=!0,n=e.distance,i=e.direction,o=e.deltaX,s=e.deltaY
-return i&t.direction||(t.direction&W?(i=0===o?U:o<0?z:V,r=o!=this.pX,n=Math.abs(e.deltaX)):(i=0===s?U:s<0?$:q,r=s!=this.pY,n=Math.abs(e.deltaY))),e.direction=i,r&&n>t.threshold&&i&t.direction},attrTest:function(e){return ze.prototype.attrTest.call(this,e)&&(2&this.state||!(2&this.state)&&this.directionTest(e))},emit:function(e){this.pX=e.deltaX,this.pY=e.deltaY
-var t=He(e.direction)
-t&&(e.additionalEvent=this.options.event+t),this._super.emit.call(this,e)}}),b($e,ze,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[Re]},attrTest:function(e){return this._super.attrTest.call(this,e)&&(Math.abs(e.scale-1)>this.options.threshold||2&this.state)},emit:function(e){if(1!==e.scale){var t=e.scale<1?"in":"out"
-e.additionalEvent=this.options.event+t}this._super.emit.call(this,e)}}),b(qe,Fe,{defaults:{event:"press",pointers:1,time:251,threshold:9},getTouchAction:function(){return[Me]},process:function(e){var t=this.options,r=e.pointers.length===t.pointers,n=e.distance<t.threshold,i=e.deltaTime>t.time
-if(this._input=e,!n||!r||e.eventType&(B|H)&&!i)this.reset()
-else if(e.eventType&F)this.reset(),this._timer=d((function(){this.state=8,this.tryEmit()}),t.time,this)
-else if(e.eventType&B)return 8
-return De},reset:function(){clearTimeout(this._timer)},emit:function(e){8===this.state&&(e&&e.eventType&B?this.manager.emit(this.options.event+"up",e):(this._input.timeStamp=c(),this.manager.emit(this.options.event,this._input)))}}),b(We,ze,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[Re]},attrTest:function(e){return this._super.attrTest.call(this,e)&&(Math.abs(e.rotation)>this.options.threshold||2&this.state)}}),b(Ge,ze,{defaults:{event:"swipe",threshold:10,velocity:.3,direction:W|G,pointers:1},getTouchAction:function(){return Ve.prototype.getTouchAction.call(this)},attrTest:function(e){var t,r=this.options.direction
-return r&(W|G)?t=e.overallVelocity:r&W?t=e.overallVelocityX:r&G&&(t=e.overallVelocityY),this._super.attrTest.call(this,e)&&r&e.offsetDirection&&e.distance>this.options.threshold&&e.maxPointers==this.options.pointers&&u(t)>this.options.velocity&&e.eventType&B},emit:function(e){var t=He(e.offsetDirection)
-t&&this.manager.emit(this.options.event+t,e),this.manager.emit(this.options.event,e)}}),b(Ye,Fe,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:9,posThreshold:10},getTouchAction:function(){return[Pe]},process:function(e){var t=this.options,r=e.pointers.length===t.pointers,n=e.distance<t.threshold,i=e.deltaTime<t.time
-if(this.reset(),e.eventType&F&&0===this.count)return this.failTimeout()
-if(n&&i&&r){if(e.eventType!=B)return this.failTimeout()
-var o=!this.pTime||e.timeStamp-this.pTime<t.interval,s=!this.pCenter||ne(this.pCenter,e.center)<t.posThreshold
-if(this.pTime=e.timeStamp,this.pCenter=e.center,s&&o?this.count+=1:this.count=1,this._input=e,0===this.count%t.taps)return this.hasRequireFailures()?(this._timer=d((function(){this.state=8,this.tryEmit()}),t.interval,this),2):8}return De},failTimeout:function(){return this._timer=d((function(){this.state=De}),this.options.interval,this),De},reset:function(){clearTimeout(this._timer)},emit:function(){8==this.state&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),Ke.VERSION="2.0.7",Ke.defaults={domEvents:!1,touchAction:xe,enable:!0,inputTarget:null,inputClass:null,preset:[[We,{enable:!1}],[$e,{enable:!1},["rotate"]],[Ge,{direction:W}],[Ve,{direction:W},["swipe"]],[Ye],[Ye,{event:"doubletap",taps:2},["tap"]],[qe]],cssProps:{userSelect:"none",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}}
-function Qe(e,t){var r
-this.options=i({},Ke.defaults,t||{}),this.options.inputTarget=this.options.inputTarget||e,this.handlers={},this.session={},this.recognizers=[],this.oldCssProps={},this.element=e,this.input=new((r=this).options.inputClass||(j?he:I?ve:A?Oe:le))(r,J),this.touchAction=new Ne(this,this.options.touchAction),Xe(this,!0),h(this.options.recognizers,(function(e){var t=this.add(new e[0](e[1]))
-e[2]&&t.recognizeWith(e[2]),e[3]&&t.requireFailure(e[3])}),this)}function Xe(e,t){var r,n=e.element
-n.style&&(h(e.options.cssProps,(function(i,o){r=M(n.style,o),t?(e.oldCssProps[r]=n.style[r],n.style[r]=i):n.style[r]=e.oldCssProps[r]||""})),t||(e.oldCssProps={}))}Qe.prototype={set:function(e){return i(this.options,e),e.touchAction&&this.touchAction.update(),e.inputTarget&&(this.input.destroy(),this.input.target=e.inputTarget,this.input.init()),this},stop:function(e){this.session.stopped=e?2:1},recognize:function(e){var t=this.session
+return n&&(8&r||!i)?16|t:n||i?4&r?8|t:2&t?4|t:2:Ce}}),g(Me,xe,{defaults:{event:"pan",threshold:10,pointers:1,direction:30},getTouchAction:function(){var e=this.options.direction,t=[]
+return 6&e&&t.push(_e),e&L&&t.push(ve),t},directionTest:function(e){var t=this.options,r=!0,n=e.distance,i=e.direction,o=e.deltaX,s=e.deltaY
+return i&t.direction||(6&t.direction?(i=0===o?1:o<0?2:4,r=o!=this.pX,n=Math.abs(e.deltaX)):(i=0===s?1:s<0?8:16,r=s!=this.pY,n=Math.abs(e.deltaY))),e.direction=i,r&&n>t.threshold&&i&t.direction},attrTest:function(e){return xe.prototype.attrTest.call(this,e)&&(2&this.state||!(2&this.state)&&this.directionTest(e))},emit:function(e){this.pX=e.deltaX,this.pY=e.deltaY
+var t=ke(e.direction)
+t&&(e.additionalEvent=this.options.event+t),this._super.emit.call(this,e)}}),g(Pe,xe,{defaults:{event:"pinch",threshold:0,pointers:2},getTouchAction:function(){return[ye]},attrTest:function(e){return this._super.attrTest.call(this,e)&&(Math.abs(e.scale-1)>this.options.threshold||2&this.state)},emit:function(e){if(1!==e.scale){var t=e.scale<1?"in":"out"
+e.additionalEvent=this.options.event+t}this._super.emit.call(this,e)}}),g(Re,Ee,{defaults:{event:"press",pointers:1,time:251,threshold:9},getTouchAction:function(){return[ge]},process:function(e){var t=this.options,r=e.pointers.length===t.pointers,n=e.distance<t.threshold,i=e.deltaTime>t.time
+if(this._input=e,!n||!r||12&e.eventType&&!i)this.reset()
+else if(1&e.eventType)this.reset(),this._timer=c((function(){this.state=8,this.tryEmit()}),t.time,this)
+else if(4&e.eventType)return 8
+return Ce},reset:function(){clearTimeout(this._timer)},emit:function(e){8===this.state&&(e&&4&e.eventType?this.manager.emit(this.options.event+"up",e):(this._input.timeStamp=u(),this.manager.emit(this.options.event,this._input)))}}),g(Ae,xe,{defaults:{event:"rotate",threshold:0,pointers:2},getTouchAction:function(){return[ye]},attrTest:function(e){return this._super.attrTest.call(this,e)&&(Math.abs(e.rotation)>this.options.threshold||2&this.state)}}),g(je,xe,{defaults:{event:"swipe",threshold:10,velocity:.3,direction:30,pointers:1},getTouchAction:function(){return Me.prototype.getTouchAction.call(this)},attrTest:function(e){var t,r=this.options.direction
+return 30&r?t=e.overallVelocity:6&r?t=e.overallVelocityX:r&L&&(t=e.overallVelocityY),this._super.attrTest.call(this,e)&&r&e.offsetDirection&&e.distance>this.options.threshold&&e.maxPointers==this.options.pointers&&l(t)>this.options.velocity&&4&e.eventType},emit:function(e){var t=ke(e.offsetDirection)
+t&&this.manager.emit(this.options.event+t,e),this.manager.emit(this.options.event,e)}}),g(Ie,Ee,{defaults:{event:"tap",pointers:1,taps:1,interval:300,time:250,threshold:9,posThreshold:10},getTouchAction:function(){return[be]},process:function(e){var t=this.options,r=e.pointers.length===t.pointers,n=e.distance<t.threshold,i=e.deltaTime<t.time
+if(this.reset(),1&e.eventType&&0===this.count)return this.failTimeout()
+if(n&&i&&r){if(4!=e.eventType)return this.failTimeout()
+var o=!this.pTime||e.timeStamp-this.pTime<t.interval,s=!this.pCenter||q(this.pCenter,e.center)<t.posThreshold
+if(this.pTime=e.timeStamp,this.pCenter=e.center,s&&o?this.count+=1:this.count=1,this._input=e,0===this.count%t.taps)return this.hasRequireFailures()?(this._timer=c((function(){this.state=8,this.tryEmit()}),t.interval,this),2):8}return Ce},failTimeout:function(){return this._timer=c((function(){this.state=Ce}),this.options.interval,this),Ce},reset:function(){clearTimeout(this._timer)},emit:function(){8==this.state&&(this._input.tapCount=this.count,this.manager.emit(this.options.event,this._input))}}),Ne.VERSION="2.0.7",Ne.defaults={domEvents:!1,touchAction:me,enable:!0,inputTarget:null,inputClass:null,preset:[[Ae,{enable:!1}],[Pe,{enable:!1},["rotate"]],[je,{direction:6}],[Me,{direction:6},["swipe"]],[Ie],[Ie,{event:"doubletap",taps:2},["tap"]],[Re]],cssProps:{userSelect:"none",touchSelect:"none",touchCallout:"none",contentZooming:"none",userDrag:"none",tapHighlightColor:"rgba(0,0,0,0)"}}
+function Le(e,t){var r
+this.options=i({},Ne.defaults,t||{}),this.options.inputTarget=this.options.inputTarget||e,this.handlers={},this.session={},this.recognizers=[],this.oldCssProps={},this.element=e,this.input=new((r=this).options.inputClass||(A?te:j?ae:R?ue:Q))(r,H),this.touchAction=new Oe(this,this.options.touchAction),De(this,!0),p(this.options.recognizers,(function(e){var t=this.add(new e[0](e[1]))
+e[2]&&t.recognizeWith(e[2]),e[3]&&t.requireFailure(e[3])}),this)}function De(e,t){var r,n=e.element
+n.style&&(p(e.options.cssProps,(function(i,o){r=x(n.style,o),t?(e.oldCssProps[r]=n.style[r],n.style[r]=i):n.style[r]=e.oldCssProps[r]||""})),t||(e.oldCssProps={}))}Le.prototype={set:function(e){return i(this.options,e),e.touchAction&&this.touchAction.update(),e.inputTarget&&(this.input.destroy(),this.input.target=e.inputTarget,this.input.init()),this},stop:function(e){this.session.stopped=e?2:1},recognize:function(e){var t=this.session
 if(!t.stopped){var r
 this.touchAction.preventDefaults(e)
 var n=this.recognizers,i=t.curRecognizer;(!i||i&&8&i.state)&&(i=t.curRecognizer=null)
-for(var o=0;o<n.length;)r=n[o],2===t.stopped||i&&r!=i&&!r.canRecognizeWith(i)?r.reset():r.recognize(e),!i&&14&r.state&&(i=t.curRecognizer=r),o++}},get:function(e){if(e instanceof Fe)return e
+for(var o=0;o<n.length;)r=n[o],2===t.stopped||i&&r!=i&&!r.canRecognizeWith(i)?r.reset():r.recognize(e),!i&&14&r.state&&(i=t.curRecognizer=r),o++}},get:function(e){if(e instanceof Ee)return e
 for(var t=this.recognizers,r=0;r<t.length;r++)if(t[r].options.event==e)return t[r]
-return null},add:function(e){if(p(e,"add",this))return this
+return null},add:function(e){if(d(e,"add",this))return this
 var t=this.get(e.options.event)
-return t&&this.remove(t),this.recognizers.push(e),e.manager=this,this.touchAction.update(),e},remove:function(e){if(p(e,"remove",this))return this
-if(e=this.get(e)){var t=this.recognizers,r=k(t,e);-1!==r&&(t.splice(r,1),this.touchAction.update())}return this},on:function(e,t){if(e!==n&&t!==n){var r=this.handlers
-return h(S(e),(function(e){r[e]=r[e]||[],r[e].push(t)})),this}},off:function(e,t){if(e!==n){var r=this.handlers
-return h(S(e),(function(e){t?r[e]&&r[e].splice(k(r[e],t),1):delete r[e]})),this}},emit:function(e,r){this.options.domEvents&&function(e,r){var n=t.createEvent("Event")
+return t&&this.remove(t),this.recognizers.push(e),e.manager=this,this.touchAction.update(),e},remove:function(e){if(d(e,"remove",this))return this
+if(e=this.get(e)){var t=this.recognizers,r=S(t,e);-1!==r&&(t.splice(r,1),this.touchAction.update())}return this},on:function(e,t){if(e!==n&&t!==n){var r=this.handlers
+return p(E(e),(function(e){r[e]=r[e]||[],r[e].push(t)})),this}},off:function(e,t){if(e!==n){var r=this.handlers
+return p(E(e),(function(e){t?r[e]&&r[e].splice(S(r[e],t),1):delete r[e]})),this}},emit:function(e,r){this.options.domEvents&&function(e,r){var n=t.createEvent("Event")
 n.initEvent(e,!0,!0),n.gesture=r,r.target.dispatchEvent(n)}(e,r)
 var n=this.handlers[e]&&this.handlers[e].slice()
 if(n&&n.length){r.type=e,r.preventDefault=function(){r.srcEvent.preventDefault()}
-for(var i=0;i<n.length;)n[i](r),i++}},destroy:function(){this.element&&Xe(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},i(Ke,{INPUT_START:F,INPUT_MOVE:2,INPUT_END:B,INPUT_CANCEL:H,STATE_POSSIBLE:Le,STATE_BEGAN:2,STATE_CHANGED:4,STATE_ENDED:8,STATE_RECOGNIZED:8,STATE_CANCELLED:16,STATE_FAILED:De,DIRECTION_NONE:U,DIRECTION_LEFT:z,DIRECTION_RIGHT:V,DIRECTION_UP:$,DIRECTION_DOWN:q,DIRECTION_HORIZONTAL:W,DIRECTION_VERTICAL:G,DIRECTION_ALL:Y,Manager:Qe,Input:X,TouchAction:Ne,TouchInput:ve,MouseInput:le,PointerEventInput:he,TouchMouseInput:Oe,SingleTouchInput:me,Recognizer:Fe,AttrRecognizer:ze,Tap:Ye,Pan:Ve,Swipe:Ge,Pinch:$e,Rotate:We,Press:qe,on:w,off:O,each:h,merge:g,extend:m,assign:i,inherit:b,bindFn:y,prefixed:M}),(void 0!==e?e:"undefined"!=typeof self?self:{}).Hammer=Ke,"function"==typeof define&&define.amd?define((function(){return Ke})):"undefined"!=typeof module&&module.exports?module.exports=Ke:e.Hammer=Ke}(window,document),define("@ember/render-modifiers/modifiers/did-insert",["exports","@ember/modifier"],(function(e,t){"use strict"
+for(var i=0;i<n.length;)n[i](r),i++}},destroy:function(){this.element&&De(this,!1),this.handlers={},this.session={},this.input.destroy(),this.element=null}},i(Ne,{INPUT_START:1,INPUT_MOVE:2,INPUT_END:4,INPUT_CANCEL:8,STATE_POSSIBLE:1,STATE_BEGAN:2,STATE_CHANGED:4,STATE_ENDED:8,STATE_RECOGNIZED:8,STATE_CANCELLED:16,STATE_FAILED:Ce,DIRECTION_NONE:1,DIRECTION_LEFT:2,DIRECTION_RIGHT:4,DIRECTION_UP:8,DIRECTION_DOWN:16,DIRECTION_HORIZONTAL:6,DIRECTION_VERTICAL:L,DIRECTION_ALL:30,Manager:Le,Input:B,TouchAction:Oe,TouchInput:ae,MouseInput:Q,PointerEventInput:te,TouchMouseInput:ue,SingleTouchInput:ne,Recognizer:Ee,AttrRecognizer:xe,Tap:Ie,Pan:Me,Swipe:je,Pinch:Pe,Rotate:Ae,Press:Re,on:_,off:w,each:p,merge:m,extend:f,assign:i,inherit:g,bindFn:b,prefixed:x}),(void 0!==e?e:"undefined"!=typeof self?self:{}).Hammer=Ne,"function"==typeof define&&define.amd?define((function(){return Ne})):"undefined"!=typeof module&&module.exports?module.exports=Ne:e.Hammer=Ne}(window,document),define("@ember/render-modifiers/modifiers/did-insert",["exports","@ember/modifier"],(function(e,t){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0
 e.default=(0,t.setModifierManager)((()=>({capabilities:(0,t.capabilities)("3.22",{disableAutoTracking:!0}),createModifier(){},installModifier(e,t,{positional:[r,...n],named:i}){r(t,n,i)},updateModifier(){},destroyModifier(){}})),class{})})),define("@ember/render-modifiers/modifiers/did-update",["exports","@ember/modifier","@embroider/macros/es-compat2"],(function(e,t,r){"use strict"
 Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0

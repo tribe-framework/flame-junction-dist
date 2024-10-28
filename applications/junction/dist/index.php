@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.8%2Bcd7f2645%22%7D%2C%22JUNCTION_PASSWORD%22%3A%22%22%2C%22JUNCTION_SLUG%22%3A%22junction%22%2C%22PLAUSIBLE_AUTH%22%3A%22%22%2C%22PLAUSIBLE_DOMAIN%22%3A%22%22%2C%22PUSHER_API_KEY%22%3A%22%22%2C%22PUSHER_CLUSTER%22%3A%22ap2%22%2C%22HIDE_POSTCODE_ATTRIBUTION%22%3A%22false%22%2C%22TribeENV%22%3A%7B%22API_URL%22%3A%22%22%7D%7D">
+    <meta name="junction/config/environment" content="%7B%22modulePrefix%22%3A%22junction%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22junction%22%2C%22version%22%3A%22v1.1.9%2B050cf859%22%7D%2C%22TribeENV%22%3A%7B%7D%7D">
 <meta name="theme-color" content="#41B3FF">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png" sizes="512x512">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,6 +19,7 @@
     <link integrity="" rel="stylesheet" href="/assets/vendor.css">
     <link integrity="" rel="stylesheet" href="/assets/junction.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css">
+    <script defer data-domain="junction.express" src="https://plausible.io/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.1.2/tinymce.min.js"></script>
 
       <link rel="shortcut icon" href="/favicon.ico">
@@ -82,10 +83,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/js/all.min.js"></script>
     <script src="https://unpkg.com/@root/passphrase"></script>
-    <script src="/assets/vendor.js" integrity="sha256-Rys4aoHp2nL2XHEXznBkH4cJ36Ltg61hahrDDb+Gc1g= sha512-+ItbCm/vayb19lPWrqLgd139bcAmo8vnBCYoJfz8IqBHp/Eo5n2gcbKZGmHqdd6f/L4HD3hzvbnjsAuOn1F/iA=="></script>
-<script src="/assets/chunk.9517.2962ca077e60ea6f0194.js" integrity="sha256-aNqYpKgGRCdgJ1KzQ10Bf8edWXv72tGm0xth9M4WJq4= sha512-mHVdiq5ZPuB8oeZue8gWP8Q4rJl810HHNRUNiMyqIMozTwu7sP41AfdmuqVTqhkp+DNIZDv9GWMKYf9oA7nmXw=="></script>
-<script src="/assets/chunk.3524.f7a5c2395a2dcef00647.js" integrity="sha256-NoByKik6x/p6m+mh4ggbg33HvQiCdXakWSwpob7h3mg= sha512-rvrWkM9FICGgYbKYe6RlCI3ZQvnueYhUiKFbUeFtbLDcGGP4w8O5tMc9rivwJ64V7bjdyaUX+GWAluEa+gzLvQ=="></script>
-    <script src="/assets/junction.js" integrity="sha256-+Vl9WnSISiFb6EfYfKxyj4/NDn6RC/A+b4UwhiqGo48= sha512-anpEBmttBX54GsmqGRmoutKW+hCRccHCawmPJFj83kCmNJNDIbFKdqnUVvqaeXaqZeRisLHfcPMPQSqtv7b4zA=="></script>
+    <script src="/assets/vendor.js" integrity="sha256-9e22Sv3vxc1WcIJpIPLBfgmmbta45y4j+/hSuSIndSY= sha512-trZSCIBEbKpbvXlK4Sk44zH3CITgyAlaEcvO1lKIjG12kkbouPj48CL0K48I4pSpEf6zzQfBCbesR2L+fVW7Cw=="></script>
+<script src="/assets/chunk.2365.9f86b5ce6d3a0b8b6df6.js" integrity="sha256-OwIXm1yB7106IDl6hNuDAO1I/KSuBB+J3MT1NCKwW90= sha512-8GxS2y0Z5x58iLgs9GojNixyx6Ow+XiTrZ7XbA6d7NuLldY6A6Z/hPrUcsSFuCHwqit17UhlBz9pxmDAujEQHA=="></script>
+<script src="/assets/chunk.3524.ca1924d688fb40fd1d92.js" integrity="sha256-LVB6jItSYLcvPYPy2BcbURgJoKer1Ns4gGDvmbSCVdE= sha512-0+nhTXFvl3h8J4RX8N6eM92/S2faz1lZYxDJ+gLJoixtFo1AxOZh2MZWywXUTQHpX1mLB+4lmybi8+nFHa7yRw=="></script>
+    <script src="/assets/junction.js" integrity="sha256-u/Eb1nX8uqZi4NTkNI2+VteNukSJMlHMSKLiyMLyNHE= sha512-6OA8ZYLlnTXkVLpWGC7Y25WGj5NCk9pe5LLmdGe9IlRG7IU97L29bEGw1cT/6LB/AILZcKv5bS8oUUvbrt4giA=="></script>
     <script>
       document.addEventListener("focusin", (e) => {
         if (

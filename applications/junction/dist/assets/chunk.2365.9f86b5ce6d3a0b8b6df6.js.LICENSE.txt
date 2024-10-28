@@ -103,11 +103,8 @@ License: MIT
 
 /**
  * CodeTool for Editor.js
- *
- * @author CodeX (team@ifmo.su)
- * @copyright CodeX 2018
- * @license MIT
  * @version 2.0.0
+ * @license MIT
  */
 
 /**
@@ -182,4 +179,4 @@ License: MIT
  * @license MIT
  */
 
-//! pretty-print-json v3.0.2 ~~ https://pretty-print-json.js.org ~~ MIT License
+//! pretty-print-json v3.0.3 ~~ https://pretty-print-json.js.org ~~ MIT License
