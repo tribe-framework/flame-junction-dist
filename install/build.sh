@@ -50,11 +50,15 @@ if test -f "$FILE"; then
     # Check if current directory is a git repository
     check_git_repo
 
+    # Get reference tag first (we'll need it for the commit message)
+    reference_tag=$(get_latest_tag "../flame-junction-src")
+
     # Save changes in master branch and push to origin
     if check_changes; then
         echo "Changes detected, committing..."
         git add .
-        read -p "Enter commit message: " commit_message
+        commit_message="latest validated build ${reference_tag}"
+        echo "Using commit message: $commit_message"
         git commit -m "$commit_message"
         
         echo "Pushing changes to origin/master..."
@@ -65,7 +69,6 @@ if test -f "$FILE"; then
 
     # Get tags from both repositories
     current_tag=$(get_latest_tag ".")
-    reference_tag=$(get_latest_tag "../flame-junction-src")
 
     echo "Current repository tag: $current_tag"
     echo "Reference repository tag: $reference_tag"
