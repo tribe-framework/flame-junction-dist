@@ -1,6 +1,6 @@
 /* @license
 Papa Parse
-v5.4.1
+v5.5.2
 https://github.com/mholt/PapaParse
 License: MIT
 */
@@ -22,14 +22,6 @@ License: MIT
  * @license   Licensed under MIT license
  *            See https://raw.githubusercontent.com/tildeio/rsvp.js/master/LICENSE
  * @version   3.6.2
- */
-
-/*!
- * @overview RSVP - a tiny implementation of Promises/A+.
- * @copyright Copyright (c) 2016 Yehuda Katz, Tom Dale, Stefan Penner and contributors
- * @license   Licensed under MIT license
- *            See https://raw.githubusercontent.com/tildeio/rsvp.js/master/LICENSE
- * @version   4.8.4+ff10049b
  */
 
 /*!
@@ -178,4 +170,4 @@ License: MIT
  * @license MIT
  */
 
-//! pretty-print-json v3.0.3 ~~ https://pretty-print-json.js.org ~~ MIT License
+//! pretty-print-json v3.0.4 ~~ https://pretty-print-json.js.org ~~ MIT License
