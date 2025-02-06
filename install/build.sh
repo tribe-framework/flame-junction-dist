@@ -1,3 +1,11 @@
+#!/usr/bin/env bash
+
+# Check if the shell is Bash
+if [ -z "$BASH_VERSION" ]; then
+    echo "Re-running script with Bash..."
+    exec /bin/bash "$0" "$@"
+fi
+
 FILE=.flame
 if test -f "$FILE"; then
     rm -r applications/junction;
