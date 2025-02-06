@@ -3,7 +3,8 @@
 # Check if the shell is Bash
 if [ -z "$BASH_VERSION" ]; then
     echo "Re-running script with Bash..."
-    exec /bin/bash "$0" "$@"
+    /bin/bash "$0" "$@"
+    exit $?
 fi
 
 # check if it's a flame folder
@@ -34,7 +35,7 @@ php sync-dist.php
 # project cleanup
 rm .gitignore
 cd $_PROOT
-rm build.sh
+[[ -e build.sh ]] && rm build.sh
 
 ##################
 ##################
@@ -54,11 +55,8 @@ check_git_repo() {
 
 # Function to check if there are any changes to commit
 check_changes() {
-    if [[ -n $(git status -s) ]]; then
-        return 0 # changes exist
-    else
-        return 1 # no changes
-    fi
+    git_status=$(git status -s)
+    [[ -n "$git_status" ]]
 }
 
 # Function to get the latest tag from a directory
@@ -116,4 +114,3 @@ else
 fi
 
 echo "Version synchronization completed successfully"
-
