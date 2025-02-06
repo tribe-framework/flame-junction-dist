@@ -8,6 +8,7 @@ fi
 
 FILE=.flame
 if test -f "$FILE"; then
+    _PROOT=$(pwd)
     [[ -e "applications/junction" ]] && rm -r applications/junction
     mkdir applications/junction
     cd applications/junction
@@ -18,7 +19,7 @@ if test -f "$FILE"; then
     ember build -prod
     php sync-dist.php
     rm .gitignore
-    cd -
+    cd $_PROOT
     rm build.sh
 
     ##################
